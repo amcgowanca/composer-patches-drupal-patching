@@ -1,0 +1,33 @@
+{
+  "name": "amcgowanca/composer-patches-drupal-patching",
+  "description": "A work-around solution for patching Drupal 8 core with cweagans/composer-patches.",
+  "type": "composer-plugin",
+  "extra": {
+    "class": "AaronMcGowan\\Composer\\Patching\\DrupalCorePatching"
+  },
+  "authors": [
+    {
+      "name": "Aaron McGowan",
+      "email": "me@amcgowan.ca"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "composer-plugin-api": "^1.0"
+  },
+  "require-dev": {
+    "composer/composer": "~1.0",
+    "cweagans/composer-patches": "1.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "AaronMcGowan\\Composer\\Patching\\": "src"
+    }
+  },
+  "repositories": {
+    "cweagans/composer-patches": {
+      "type": "vcs",
+      "url": "git@github.com:amcgowanca/composer-patches.git"
+    }
+  }
+}
