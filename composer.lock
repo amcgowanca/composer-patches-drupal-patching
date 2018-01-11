@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a741c5c90eda02ef9f133ec1594e00e",
-    "packages": [],
+    "content-hash": "95d7916279049323593f0a60fdc83656",
+    "packages": [
+        {
+            "name": "cweagans/composer-patches",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amcgowanca/composer-patches.git",
+                "reference": "2eeba8aa7ecca90b69a6c7386522635783e553cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amcgowanca/composer-patches/zipball/2eeba8aa7ecca90b69a6c7386522635783e553cf",
+                "reference": "2eeba8aa7ecca90b69a6c7386522635783e553cf",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "cweagans\\Composer\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "source": "https://github.com/amcgowanca/composer-patches/tree/1.x"
+            },
+            "time": "2018-01-11T12:22:53+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "composer/ca-bundle",
@@ -262,57 +314,6 @@
                 "validator"
             ],
             "time": "2018-01-03T16:37:06+00:00"
-        },
-        {
-            "name": "cweagans/composer-patches",
-            "version": "1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/amcgowanca/composer-patches.git",
-                "reference": "7451b971b70e7b9c23a2b45159194da4e18c34e6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/amcgowanca/composer-patches/zipball/7451b971b70e7b9c23a2b45159194da4e18c34e6",
-                "reference": "7451b971b70e7b9c23a2b45159194da4e18c34e6",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "composer/composer": "~1.0",
-                "phpunit/phpunit": "~4.6"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "cweagans\\Composer\\Patches"
-            },
-            "autoload": {
-                "psr-4": {
-                    "cweagans\\Composer\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "cweagans\\Composer\\Tests\\": "tests"
-                }
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Cameron Eagans",
-                    "email": "me@cweagans.net"
-                }
-            ],
-            "description": "Provides a way to patch Composer packages.",
-            "support": {
-                "source": "https://github.com/amcgowanca/composer-patches/tree/1.x-test"
-            },
-            "time": "2018-01-11T11:11:30+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
