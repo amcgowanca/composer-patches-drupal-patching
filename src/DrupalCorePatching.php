@@ -40,7 +40,7 @@ class DrupalCorePatching implements PluginInterface, EventSubscriberInterface {
     // if ($package->getName() == 'drupal/drupal' && $event->getInstallPath() == 'docroot/core') {
 
     if ($this->io->isVeryVerbose()) {
-      $this->io->write(sprintf("Checking package '%s [id: %s]' to match installation path for altering..."), $package->getName(), $package->getId());
+      $this->io->write(sprintf("Checking package '%s [id: %s]' to match installation path for altering...", $package->getName(), $package->getId()));
     }
 
     if ($event->getInstallPath() == 'docroot/core') {
