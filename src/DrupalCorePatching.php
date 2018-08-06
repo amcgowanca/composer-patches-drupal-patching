@@ -32,6 +32,8 @@ use cweagans\Composer\PatchEvents;
  */
 class DrupalCorePatching implements PluginInterface, EventSubscriberInterface {
 
+  const EVENT_PREPATCH_APPLY = 'pre-patch-apply';
+
   /**
    * @var Composer
    */
@@ -54,9 +56,7 @@ class DrupalCorePatching implements PluginInterface, EventSubscriberInterface {
    * {@inheritdoc}
    */
   public static function getSubscribedEvents() {
-    return [
-      PatchEvents::PRE_PATCH_APPLY => ['onPrePatchApply'],
-    ];
+    return [static::EVENT_PREPATCH_APPLY => ['onPrePatchApply']];
   }
 
   /**
